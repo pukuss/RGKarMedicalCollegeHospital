@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className=" overflow-hidden fixed w-screen h-10 md:h-16 flex justify-center items-center bg-gray-500 z-50">
+      <nav className=" overflow-hidden fixed w-screen h-10 md:h-16 flex  justify-center items-center bg-gray-500/10  z-50 backdrop-blur-lg">
         <div className="items-center relative h-full w-[1600px] flex justify-between px-5">
           {/* Logo */}
           <div className="w-24 ">

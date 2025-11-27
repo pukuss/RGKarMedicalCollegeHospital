@@ -19,9 +19,9 @@ function Home() {
 
   return (
     <>
-      <div className="m-auto ">
+      <div className="">
         {/* Background video  */}
-        <div className=" w-screen relative  shadow-emerald-400">
+        <div className=" w-full relative m-auto shadow-emerald-400">
           <video
             autoPlay
             muted
@@ -35,7 +35,7 @@ function Home() {
 
 
 
-        <div className=" absolute  w-screen top-10 md:top-18 m-auto">
+        <div className=" absolute  w-full top-10 md:top-18 m-auto">
           <div className=" m-auto max-w-[1400px] w-full ">
             <div className="flex justify-between items-center pr-10">
               <span>
@@ -86,7 +86,7 @@ function Home() {
 
 
         {/* Main containar Of Home Page   */}
-        <div className=" h-screen w-screen m-auto mt-5">
+        <div className=" h-screen w-full m-auto mt-5 not-md:p-2">
           <div className=" z-10 bg-[url('src/assets/images/background.jpg')] bg-cover bg-center  max-w-[1600px] m-auto rounded-2xl relative">
             <div className="  flex flex-col items-start w-full relative">
               <span className="p-2 font-bold md:text-2xl  ">
@@ -107,7 +107,7 @@ function Home() {
                   </span>
                 </button>
 
-                <button className="  shadow-sm shadow-black text-nowrap flex not-md:text-[10px] items-center justify-center  border  md:px-5 px-2 py-0 rounded-2xl bg-black font-bold gap-2">
+                <button className=" shadow-sm shadow-black text-nowrap flex not-md:text-[10px] items-center justify-center  border  md:px-5 px-2 py-0 rounded-2xl bg-black font-bold gap-2">
                   STUDENT UNION
                 </button>
               </div>
@@ -172,7 +172,9 @@ function Home() {
                   setgithubOpen(!githubOpen)
                   setGoogleOpen(false)
                 }}
-                className=" flex hover:animate-slideDown duration-300 justify-center items-center shadow-sm shadow-black text-nowrap not-md:text-[10px] border pr-10 px-3 py-1 rounded-xl hover:bg-gray-600  transition-all d bg-black font-bold gap-2">
+                className={`flex hover:animate-slideDown duration-300 justify-center items-center shadow-sm shadow-black text-nowrap not-md:text-[10px] border pr-10 px-3 py-1 rounded-xl   transition-all d bg-black font-bold gap-2
+                ${githubOpen ? "bg-emerald-400/40 shadow-2xl backdrop-blur-3xl shadow-emerald-400": "hover:bg-gray-600"}
+                `}>
                 <img
                   width="20"
                   height="20"
@@ -309,14 +311,16 @@ function Home() {
           <div className=" ">
             <div 
             className=" max-w-[1600px] m-auto h-[500px] mt-1.5 grid grid-cols-2 relative">
-              <div className="grid w-full">
+              <div className="grid w-full  rounded-2xl overflow-hidden">
               <div
-              className="  bg-amber-500 relative">
+              className="  relative bg-[linear-gradient(185deg,rgba(255,145,0,1)_0%,rgba(237,221,83,1)_100%)]">
 
               </div>
               <div 
-              className=" bg-pink-400 overflow-hidden">
-                  <img className="hover:scale-110 transition-transform duration-300  absolute left-0 borde h-[400px] not-md:w-[500px]  md:h-[500px] bottom-0" src="/src/assets/images/anime_doctor.png" alt="" srcset="" />                 
+              className=" bg-[linear-gradient(90deg,rgba(136,0,255,1)_0%,rgba(255,0,225,1)_100%)] overflow-hidden ">
+                  <img 
+                  className="hover:scale-110 transition-transform duration-300 object-cover object-bottom-right absolute  h-[370px] not-md:w-[400px]  md:h-[500px] -bottom-10 " 
+                  src="/src/assets/images/anime_doctor.png" alt="" srcset="" />                 
               </div>
               </div>
               <div 
