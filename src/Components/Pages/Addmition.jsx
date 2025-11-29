@@ -1,15 +1,25 @@
-import React from 'react'
+import React from "react";
 
 function Addmition() {
+  setTimeout(() => {
+    
+  }, 5000);
+
+
   return (
     <>
-      <div
-      className='bg-amber-50 w-screen h-screen'
+      <div 
+        className=" relative top-[60px] h-screen w-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/src/assets/images/addmition.png')",
+        }}
       >
-        <div className=' w-50 h-80 border bg-amber-500'></div>
+         <div className=" h-full w-full flex items-center justify-center">
+          {/* Your content here */}
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Addmition
+export default Addmition;

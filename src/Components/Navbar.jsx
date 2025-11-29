@@ -72,8 +72,8 @@ function Navbar() {
           <div className="flex justify-between items-center gap-5">
             <button
               onClick={() => setClicked(true)}
-              className={`text-sm font-bold px-4 py-1 rounded-[10px] not-md:h-7 hover:border-b-blue-500 hover:animate-pulse ${
-                clicked ? "bg-green-500" : "bg-blue-500"
+              className={`text-sm font-bold px-4 py-1 rounded-[10px] not-md:h-7 hover:border-b-blue-500 hover:scale-x-110 transition-all duration-300 ${
+                clicked ? "bg-green-500" : "bg-red-500 border-r-red-700 shadow-2xl shadow-red-600"
               }`}>
               LogIn
             </button>

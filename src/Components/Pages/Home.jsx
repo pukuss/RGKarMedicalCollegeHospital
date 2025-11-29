@@ -27,7 +27,7 @@ function Home() {
             muted
             loop
             className="w-full object-cover h-screen  "
-            src="/public/bg video/dna_bg.mp4">
+            src="/bg video/dna_bg.mp4">
             
           </video>
         </div>
@@ -63,15 +63,15 @@ function Home() {
             <div className="">
               <div>
                 <span
-                  style={{
-                    backgroundImage: "url('/src/assets/images/text_bg.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  className=" not-md:text-[12px] text-6xl font-bold ">
+                  // style={{
+                  //   backgroundImage: "url('/src/assets/images/text_bg.jpg')",
+                  //   backgroundSize: "cover",
+                  //   backgroundPosition: "center",
+                  //   WebkitBackgroundClip: "text",
+                  //   backgroundClip: "text",
+                  //   color: "transparent",
+                  // }}
+                  className=" not-md:text-[30px] text-7xl font-bold ">
                   RG Kar Medicale College & Hospital
                 </span>
               </div>
@@ -319,8 +319,8 @@ function Home() {
               <div 
               className=" bg-[linear-gradient(90deg,rgba(136,0,255,1)_0%,rgba(255,0,225,1)_100%)] overflow-hidden ">
                   <img 
-                  className="hover:scale-110 transition-transform duration-300 object-cover object-bottom-right absolute  h-[370px] not-md:w-[400px]  md:h-[500px] -bottom-10 " 
-                  src="/src/assets/images/anime_doctor.png" alt="" srcset="" />                 
+                  className="transition-transform duration-300 object-cover object-bottom-right  absolute  h-[370px] not-md:w-[400px]  md:h-[500px] bottom-0 " 
+                  src="/src/assets/images/anime_doctor.png" alt=""  />                 
               </div>
               </div>
               <div 
@@ -332,10 +332,21 @@ function Home() {
 
 
 
-
-            <div></div>
+            <div
+            className=" max-w-[1200px] m-auto flex justify-end mt-20" >
+              <div className=" w-full h-full"
+              ><img
+                className=" object-cover flex border w-full rounded-2xl overflow-hidden border-blue-700 shadow-fuchsia-600 shadow-2xl hover:shadow-emerald-500 hover:drop-shadow-2xl"
+              src="/src/assets/Promotion/EnfenEra.png"  /></div>
           </div>
 
+
+
+            
+          </div>
+
+
+          
 
 
         </div>
