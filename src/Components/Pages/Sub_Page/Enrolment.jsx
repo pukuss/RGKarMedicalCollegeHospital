@@ -51,8 +51,10 @@ function Enrolment() {
 
 
             {/* black backgroud box side  */}
-            <div className='bg-black w-full rounded-[0px_10px_10px_0px]' >
-
+            <div className='bg-black w-full rounded-[0px_10px_10px_0px] relative h-120' >
+              <div className=' absolute -bottom-35 -right-18 '
+              ><img className=' w-80'
+               src="https://cdn.pixabay.com/photo/2025/09/10/12/57/ai-generated-9826352_960_720.png" alt="" /></div>
             </div>
           </div>
 

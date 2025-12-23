@@ -39,7 +39,7 @@ useEffect(() => {
 
 
   const menuclass =
-    "font-bold text-[10px] hover:border hover:text-emerald-500 flex bg-gradient-to-r from-slate-900 to-slate-700 p-2 cursor-pointer rounded-[10px]";
+    "font-bold text-[12px] hover:border hover:text-emerald-500 flex bg-green-500/10 border border-green-500 p-2 cursor-pointer rounded-[8px]";
 
   const Dex_menu =
     "flex md:text-[14px]  cursor-pointer whitespace-nowrap hover:text-amber-500 font-bold p-2 rounded-[10px] ";
@@ -141,10 +141,10 @@ useEffect(() => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="w-50 flex fixed right-2 top-10 mt-2 z-40"
+        <div className="w-50 flex fixed right-2 top-10 mt-2 z-40 transition-all duration-1000 " 
           // onClick={(e) => e.stopPropagation()}
         >
-          <ul className="gap-1 md:hidden w-full rounded-2xl p-5 flex flex-col bg-gradient-to-r from-fuchsia-600/50 to-blue-400/50">
+          <ul className="gap-1 md:hidden w-full rounded-lg transition-all duration-1000 p-5 flex flex-col bg-gradient-to-r from-black/70 to-green-600/50">
             <li>
               {" "}
               {/*Home*/}
