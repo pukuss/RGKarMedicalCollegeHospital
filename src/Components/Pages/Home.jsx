@@ -138,7 +138,7 @@ function Home() {
 
         {/* Main containar Of Home Page   */}
         <div className=" h-screen w-full m-auto mt-5 not-md:p-2">
-          <div className=" z-10 bg-[url('src/assets/images/background.jpg')] bg-cover bg-center  max-w-[1600px] m-auto rounded-2xl relative">
+          <div className=" z-10 bg-[url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg')] bg-cover bg-center  max-w-[1600px] m-auto rounded-2xl relative">
             <div className="  flex flex-col items-start w-full relative">
               <span className="p-2 font-bold md:text-2xl  ">
                 Information of NEET PG Admission-2025 of R. G. Kar Medical
@@ -177,7 +177,7 @@ function Home() {
               <div className=" md:w-[60%] font-bold gap-5 flex flex-col ">
                 <span
                   style={{
-                    backgroundImage: "url('/src/assets/images/text_bg.jpg')",
+                    backgroundImage: "url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     WebkitBackgroundClip: "text",

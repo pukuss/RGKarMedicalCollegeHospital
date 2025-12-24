@@ -12,7 +12,7 @@ function Addmition() {
       <div 
         className=" relative top-[60px] h-screen w-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/src/assets/images/addmition.png')",
+          backgroundImage: "url('/public/Image/Arabic_background.jpg')",
         }}
       >
          <div className=" h-full w-full flex items-center justify-center">
@@ -23,7 +23,7 @@ function Addmition() {
         <div className="max-w-[1800px] m-auto rounded-2xl mt-10">
           <img
            className=" m-auto rounded-2xl"
-          src="/src/assets/images/Addmition_bg.png " alt="" srcset="" />
+          src="/public/Image/page_img/Addmition_bg.png " alt="" srcset="" />
 
           <div className=" p-5">
             <NavLink
