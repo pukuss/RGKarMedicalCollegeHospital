@@ -74,7 +74,7 @@ useEffect(() => {
 
             <li className={Dex_menu}>
               <NavLink
-                to="Addmition"
+                to="addmition"
                 className={({ isActive }) =>
                   `${isActive ? "text-amber-600 font-bold" : "font-bold"}`
                 }>
@@ -165,7 +165,7 @@ useEffect(() => {
               {" "}
               {/*addmition*/}
               <NavLink
-                to="Addmition"
+                to="addmition"
                 className={({ isActive }) =>
                   `${menuclass}  ${
                     isActive
