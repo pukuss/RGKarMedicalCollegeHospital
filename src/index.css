@@ -52,11 +52,11 @@ button:focus-visible {
 }
 @font-face {
   font-family: BBH;
-  src: url(/public/font/BBHBartle-Regular.ttf);
+  src: url(/font/BBHBartle-Regular.ttf);
 }
 @font-face {
   font-family: alluser;
-  src: url(/public/font/Hanuman-VariableFont_wght.ttf);
+  src: url(/font/Hanuman-VariableFont_wght.ttf);
 }
 @theme {
   --font-knews: "knewave" , sans-serif;

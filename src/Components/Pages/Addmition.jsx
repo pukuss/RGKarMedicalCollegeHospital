@@ -12,7 +12,7 @@ function Addmition() {
       <div 
         className=" relative md:top-16 top-10 h-screen w-full bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: "url('/public/Image/Arabic_background.jpg')",
+          backgroundImage: "url('/Image/Arabic_background.jpg')",
         }}
       >
          <div className=" h-full w-full overflow-hidden">
