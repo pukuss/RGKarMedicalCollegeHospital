@@ -140,7 +140,7 @@ function Home() {
         <div className="border w-full m-auto mt-20 not-md:p-2 ">
           <div
             className=" z-10 
-          bg-[url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg')] 
+          bg-[url('https://images.pexels.com/photos/1824273/pexels-photo-1824273.jpeg')] 
           bg-cover bg-right  max-w-[1600px] m-auto rounded-2xl relative">
             <div className="  flex flex-col items-start w-full relative">
               <span className="p-2 font-extrabold md:text-2xl text-[2.2vw] font-alluser  text-gray-400">
