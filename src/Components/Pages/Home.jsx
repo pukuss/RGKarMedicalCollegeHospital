@@ -11,6 +11,7 @@ import {
   RectangleEllipsisIcon,
   GoalIcon,
   SolarPanelIcon,
+  LocateFixedIcon,
 } from "lucide-react";
 
 import githubApi from "../Api/Github";
@@ -18,6 +19,7 @@ import githubApi from "../Api/Github";
 import Infenera from "../page_comp/home/Infenera";
 import GemeniBar from "../page_comp/Effects/GemeniBar";
 import GithubBox from "../page_comp/home/GithubBox";
+import Hospitl_dashcomp from "../page_comp/home/Hospitl_dashcomp";
 
 function Home() {
   // Github Dropdown
@@ -43,11 +45,15 @@ function Home() {
     };
   }, [githubOpen]);
 
+
+
+
+
   return (
     <>
       <div className="">
-        {/* Background video  */}
-        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_20px] shadow-amber-50">
+        {/* Background video===============================================>>>  */}
+        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_50px] shadow-[rgba(113, 174, 245, 0.6)]">
           <video
             autoPlay
             muted
@@ -69,32 +75,43 @@ function Home() {
                   //   backgroundClip: "text",
                   //   color: "transparent",
                   // }}
-                  className=" not-md:text-[25px] text-7xl font-bold font-BBH">
+                  className=" not-md:text-[25px] text-6xl font-bold font-BBH">
                   CarePlus Multispeciality Medicale College & Hospital
                 </span>
 
-                <div className=" animate-slideDown transition-all duration-300 grid grid-cols-2 gap-5 w-[50%] md:w-[25%] absolute md:bottom-20 bottom-20 right-0">
-                  <div className=" rounded-2xl">
+                <div className=" animate-slideDown transition-all duration-300 grid grid-rows-2 gap-5 w-[80%] md:w-[25%] absolute md:bottom-20 bottom-20 right-0 not-md:right-[10%]">
+                  <div className="flex justify-center items-end not-md:text-[13px] text-[14px] text-blue-400 font-extrabold">
+                    Healing Lives with Precision, Compassion, and Trust</div>
+                  
+                  
+                  <div className=" grid grid-cols-2 gap-2 ">
+                    <div className=" relative rounded-2xl">
                     {" "}
+                    <div className=" absolute flex justify-center items-center font-BBH z-20 border w-full h-full hover:opacity-70 opacity-0 bg-black transition-all delay-150">Emergency</div>
                     <img
-                      className=" rounded-[5px]"
+                      className=" absolute rounded-[5px]"
                       src="/src/assets/images/hospital_1.jpg"
                       alt=""
                     />
                   </div>
-                  <div className=" rounded-2xl ">
+
+
+                  <div className=" rounded-2xl relative ">
+                   <div className=" absolute flex justify-center items-center font-BBH z-20 border w-full h-full hover:opacity-70 opacity-0 bg-black transition-all delay-150">Critical cases</div>
                     {" "}
                     <img
-                      className=" rounded-[5px]"
+                      className=" rounded-[5px] "
                       src="/src/assets/images/hospital_2.jpg"
                       alt=""
                     />
                   </div>
+                  </div>
+                  
                 </div>
               </div>
 
               {/* bottome apply button and logo and section  */}
-              <div className="flex justify-between items-center  absolute bottom-0">
+              <div className="flex justify-between items-center  absolute bottom-10">
                 <span>{/* <Logo /> */}</span>
 
                 {/* apply now up pg button  */}
@@ -107,12 +124,20 @@ function Home() {
                   </button>
                 </Link>
               </div>
+
+
+
+              <div className=" w-full text-gray-500 absolute bottom-0 h-5 flex  font-alluser font-extrabold text-[12px] items-center not-md:text-[9px] gap-3">
+                
+                <span>📞 Emergency Hotline: +91 8945512739</span>
+                <span>🕒 Available 24×7 </span>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Main containar Of Home Page   */}
-        <div className=" h-screen w-full m-auto mt-20 not-md:p-2">
+        <div className="border w-full m-auto mt-20 not-md:p-2 ">
           <div
             className=" z-10 
           bg-[url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg')] 
@@ -123,7 +148,7 @@ function Home() {
                 Multispeciality Hospital
               </span>
 
-              <div className="flex  gap-10 p-3 bg-amber-50/10 min-w-full rounded-[0px_15px_0px_0px]">
+              <div className="flex   gap-10 p-3 bg-amber-50/10 min-w-full rounded-[0px_15px_0px_0px]">
                 {/* activitis button   */}
                 <button className=" group flex items-center justify-center not-md:text-[10px]  px-5 py-1.5 rounded-2xl border font-bold gap-2">
                   <img
@@ -306,37 +331,23 @@ function Home() {
           <div className=" ">
             <div className=" max-w-[1600px] m-auto  mt-1.5  relative">
               <div className=" h-full w-full  rounded-[7px] overflow-hidden">
+                
                 <div className="p-5 w-full h-full bg-[linear-gradient(9deg,rgba(100,0,255,0.5)_50%,rgba(255,0,225,0.1)_100%)] ">
-                  <div className=" font-bold ">
-                    At <span className="font-extrabold text-purple-500">CarePlus Multispeciality Medicale College & Hospital</span> , healthcare is not just treatment — it is
-                    responsibility. We combine medical expertise, modern
-                    infrastructure, and compassionate care to ensure every
-                    patient receives the attention they deserve.
-                  </div>
+
+                    <div className="p-2 flex gap-3 rounded-lg w-full font-BBH text-purple-500 mb-2 bg-purple-500/20">
+                      <span><LocateFixedIcon /></span>
+                      <span>Hospital Faculty</span>
+                    </div>
+
+                    <div className=" font-bold ">
+                      At <span className="font-extrabold text-purple-500">CarePlus Multispeciality Medicale College & Hospital</span> , healthcare is not just treatment — it is
+                      responsibility. We combine medical expertise, modern
+                      infrastructure, and compassionate care to ensure every
+                      patient receives the attention they deserve.
+                    </div>
+
                 </div>
-                {/* <div className="  overflow-hidden ">
-                  <img
-                    className="transition-transform duration-300 object-cover object-bottom-right  absolute  h-[370px] not-md:w-[400px]  md:h-[500px] bottom-0 "
-                    src="/src/assets/images/anime_doctor.png"
-                    alt=""
-                  />
-                </div> */}
               </div>
-              {/* <div className=" flex items-center">
-                <span className=" not-md:text-[12px] m-5 text-gray-300 font-bold  text-2xl">
-                  RG Kar Medical College & Hospital stands as one of the most
-                  trusted pillars of healthcare, delivering advanced medical
-                  treatment with compassion and dedication. With a legacy of
-                  excellence and a team of experienced doctors, nurses, and
-                  medical professionals, we are committed to providing
-                  world-class care to every patient. Our modern facilities,
-                  state-of-the-art diagnostics, and 24×7 emergency services
-                  ensure that quality treatment is always within reach. At RG
-                  Kar, we believe in healing with empathy—where every life
-                  matters, every patient receives personal attention, and every
-                  step of care is guided by integrity and expertise.
-                </span>
-              </div> */}
             </div>
 
             <div className=" max-w-[1600px] m-auto flex flex-col justify-end mt-20 gap-10">
@@ -356,6 +367,12 @@ function Home() {
               </div>
             </div>
           </div>
+          
+          <div className="border max-w-[1600px] m-auto mt-10 rounded-2xl overflow-hidden">
+            <Hospitl_dashcomp />
+          </div>
+
+
         </div>
       </div>{" "}
       {/*main dev*/}

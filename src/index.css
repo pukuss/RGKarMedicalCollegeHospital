@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #02020f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -115,7 +115,9 @@ button:focus-visible {
     0 0 1px rgb(138,43,226,0.6),
     0 0 1px rgb(219,68,133,0.6);/* subtle glow shadow */
 }
-
+.bg{
+   color:  rgba(113, 174, 245, 0.6)
+}
 
 
 
