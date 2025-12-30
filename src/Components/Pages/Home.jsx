@@ -53,7 +53,7 @@ function Home() {
     <>
       <div className="">
         {/* Background video===============================================>>>  */}
-        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_50px] shadow-[rgba(113, 174, 245, 0.6)]">
+        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_50px] shadow-pink-200">
           <video
             autoPlay
             muted
@@ -139,7 +139,7 @@ function Home() {
         {/* Main containar Of Home Page   */}
         <div className="border w-full m-auto mt-20 not-md:p-2 ">
           <div
-            className=" z-10 
+            className=" z-10 not-md:h-[50vh] 
           bg-[url('https://images.pexels.com/photos/1824273/pexels-photo-1824273.jpeg')] 
           bg-cover bg-right  max-w-[1600px] m-auto rounded-2xl relative">
             <div className="  flex flex-col items-start w-full relative">
@@ -150,7 +150,7 @@ function Home() {
 
               <div className="flex   gap-10 p-3 bg-amber-50/10 min-w-full rounded-[0px_15px_0px_0px]">
                 {/* activitis button   */}
-                <button className=" font-alluser group flex items-center justify-center not-md:text-[10px]  px-5 py-1.5 rounded-2xl border font-bold gap-2">
+                <button className=" font-alluser group flex items-center justify-center not-md:text-[10px] text-purple-500  px-5 py-1 rounded-[5px] border font-bold gap-2">
                   <img
                     src="/src/assets/icon/Student_icon.png"
                     className="h-5 "
@@ -215,7 +215,7 @@ function Home() {
             </div>
 
             {/* github dropdown arrow =============================================== */}
-            <div className=" p-10 flex gap-1 ">
+            <div className=" p-10 flex gap-1 absolute bottom-0 not-md:-bottom-10 ">
               <button
                 onClick={() => {
                   setgithubOpen(!githubOpen);
@@ -368,7 +368,7 @@ function Home() {
             </div>
           </div>
           
-          <div className="border max-w-[1600px] m-auto mt-10 rounded-2xl overflow-hidden">
+          <div className=" max-w-[1600px] m-auto mt-10 rounded-2xl overflow-hidden p-2 ">
             <Hospitl_dashcomp />
           </div>
 
