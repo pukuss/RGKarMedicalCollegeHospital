@@ -59,11 +59,11 @@ function Home() {
             muted
             loop
             className="w-full object-cover h-screen  "
-            src="/bg video/dna_bg.mp4"></video>
+            src="/bg_video/dna_bg.mp4"></video>
         </div>
 
         <div className=" absolute  w-full top-10 md:top-18 m-auto">
-          <div className=" m-auto max-w-[1600px] md:h-[92vh] h-[95vh]">
+          <div className=" m-auto max-w-[1600px] md:h-[92vh] h-[95vh] overflow-hidden">
             <div className=" relative h-full flex  justify-center items-center">
               <div>
                 <span
