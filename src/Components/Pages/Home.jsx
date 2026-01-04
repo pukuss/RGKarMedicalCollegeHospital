@@ -12,6 +12,7 @@ import {
   GoalIcon,
   SolarPanelIcon,
   LocateFixedIcon,
+  ListTree,
 } from "lucide-react";
 
 import githubApi from "../Api/Github";
@@ -25,9 +26,18 @@ function Home() {
   // Github Dropdown
   const [githubOpen, setgithubOpen] = useState(false);
   const [GoogleOpen, setGoogleOpen] = useState(false);
+  
+  
   // const GithubApiDeta = useLoaderData(); looder..............>>>
-  const GithubApiDeta = githubApi();
+  // const GithubApiDeta = githubApi();
+    
   const dropdownRef = useRef(null);
+
+  const {GithubApiData , error} = githubApi()
+  console.log(GithubApiData);
+  console.log(error);
+  
+  
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -241,7 +251,7 @@ function Home() {
           {/*  GitHub dorpdown bar */}
           {githubOpen && (
             <div ref={dropdownRef} className=" block">
-              <GithubBox GithubApiDeta={GithubApiDeta} />
+              <GithubBox GithubApiDeta={GithubApiData} />
             </div>
           )}
 
@@ -283,17 +293,16 @@ function Home() {
                 {/* Dropdown box content  */}
                 <div className=" rounded-2xl w-full relative  flex justify-center flex-col">
                   <span className=" font-bold  p-2 hover:bg-amber-500 block">
-                    Github ID :{GithubApiDeta.id}
+                    Github ID :{GithubApiData?.id}
                   </span>
                   <span className="bg-linear-to-r from-gray-700 to-blue-400/50 flex p-2 ">
-                    User Name :{GithubApiDeta.name}
+                    User Name :{GithubApiData?.name}
                   </span>
                   <span className="  h-40 w-40 rounded-2xl relative">
                     <img
-                      src={GithubApiDeta.avatar_url}
+                      src={GithubApiData?.avatar_url}
                       className=" rounded-3xl"
                       alt=""
-                      srcset=""
                     />
                     <img
                       className=" absolute bottom-3 left-2"

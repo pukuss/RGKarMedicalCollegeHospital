@@ -5,6 +5,8 @@ import { div } from "framer-motion/client";
 
 
 function GithubBox({GithubApiDeta}) {
+     console.log(GithubApiDeta);
+     
     return (
         <>
             <div

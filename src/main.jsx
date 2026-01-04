@@ -7,8 +7,6 @@ import Layout from './Layout/Layout.jsx'
 import Home from './Components/Pages/Home.jsx'
 import Addmition from './Components/Pages/Addmition.jsx'
 import Academic from './Components/Pages/Academic.jsx'
-
-import useGithubApi from './Components/Api/Github.js'
 import Registration from './Components/Pages/Registration.jsx'
 
 

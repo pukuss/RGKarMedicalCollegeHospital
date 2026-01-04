@@ -6,6 +6,7 @@ function Addmition() {
     
   }, 5000);
 
+  const USERITEM = ["NURSING" , "DOCTOR" , "D-FHARMA" , "SURGENT"]
 
   return (
     <>
@@ -43,19 +44,69 @@ function Addmition() {
 
 {/* -------------Herocu section--------------------->> */}
           <div
-          className="border h-[80vh] md:p-5 max-w-[1600px] m-auto ">
+          className=" h-[80vh] md:p-5 max-w-[1600px] m-auto ">
 
             <div className=" h-full w-full grid md:grid-cols-2 ">
-              <div className="border flex items-center h-full w-full not-md:justify-center">
-                <div className="flex flex-col not-md:justify-center items-center">
-                  <span className="font-alluser animate-slideDown font-extrabold text-4xl text-white md:text-5xl">ADDMITION OPEN</span>
-                  <span className="font-extrabold animate-slideDown text-purple-500">RGkar Collenge & Hospital </span>
+              <div className=" flex items-center h-full w-full not-md:justify-center">
+                <div className="flex flex-col md:items-start items-center not-md:justify-start md:gap-20 m-4 md:m-10">
+                  <div className=" flex flex-col">
+                    <span className="font-alluser animate-slideDown font-extrabold text-4xl text-white md:text-7xl">ADDMITION OPEN</span>
+                    <span className="font-extrabold not-md:text-[10px] animate-slideDown text-purple-500">  CarePlus Multispeciality Medicale College & Hospital </span>
+                  </div>
+                  <div className=" text-2xl not-md:text-[16px] font-alluser md:items-start flex flex-col">
+                    <span className="text-7xl not-md:text-3xl text-purple-600 text-shadow-2xs shadow-purple-300"> India's Top 10</span>
+                    <span>MULTISPECIALITY HOSPITAL</span>
+                    <span className="text-[26px] not-md:text-[10px] font-bebas">When you Want to be A doctor</span>
+                  </div>
+                  
+                  <div>
+                    <button 
+                    className="border font-alluser border-pink-600 m-5 flex gap-5 justify-center items-center px-10 not-md:px-5 rounded-[5px] bg-purple-600/50"
+                    type="button">
+                       <span>VISIT  OUR COURSE</span>
+                       <span className="border rounded-full p-2 not-md:p-0 m-1 bg-white/20"> <ArrowBigRight /></span>
+                    </button>
+                  </div>
+
                 </div>
               </div>
 
-              <div className="border animate-slideDown w-full grid grid-rows-2 gap-1">
-                <div className="bg-white"></div>
-                <div className="bg-white"></div>
+              <div className=" animate-slideDown w-full h-full grid grid-rows-2 gap-1">
+                <div className="flex  justify-center items-center max-h-full gap-3 bg-purple-200/10 backdrop-blur-lg md:m-10 p-5 md:p-10 rounded-[10px]">
+                  {
+                    USERITEM.map((element)=> {
+                      return <div 
+                      className="border cursor-pointer font-alluser not-md:h-18 not-md:w-18 not-md:text-[12px]  h-1/2 w-1/4 flex justify-center items-center bg-purple-500/10 backdrop-blur-lg hover:bg-green-400/30 transition-all delay-150 ">
+                        {element}</div>
+                    })
+                  }
+                  {/* <div className="border h-1/2 w-1/4 flex justify-center items-center hover:bg-fuchsia-600/50">NURSING</div>
+                  <div className="border h-1/2 w-1/4 flex justify-center items-center">DOCTOR</div>
+                  <div className="border h-1/2 w-1/4 flex justify-center items-center">D-FARMA</div>
+                  <div className="border h-1/2 w-1/4 flex justify-center items-center">SURGENT</div> */}
+                </div>
+                <div className=" flex justify-end items-end">
+                  <div className="m-2 font-BBH text-[8px] ">
+                    
+                    <div className="flex justify-center items-center text-cyan-500 gap-2">
+                      <label className="text-[12px]" htmlFor="">
+                        Email
+                      </label>
+                      <input
+                        className="pl-2 font-alluser text-[12px] px-25 bg-pink-500/20 rounded-2xl h-6 border border-purple-700"
+                        type="email"
+                        placeholder="Drop You Email"
+                        name=""
+                        id="" />
+                      <button
+                        className="border rounded-full p-2 px-2.5"
+                        type="submit">
+                        ={">"}
+                      </button>
+                    </div>
+                    <span>INFENERA HOSPITAL&CO PVT LTD</span>
+                  </div>
+                </div>
               </div>
               {/* <div className="border h-full w-full"></div> */}
             </div>
@@ -100,6 +151,6 @@ function Addmition() {
     </>
   );
 }
-import { ArrowBigRight, ArrowRight } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, ArrowRight } from "lucide-react";
 
 export default Addmition;

@@ -7,7 +7,7 @@ import useGithubApi from '../../Api/Github'
 function Account() {
 //  const accountDeta = useAccount()
 
-const githubdeta = useGithubApi()
+const {GithubApiData} = useGithubApi()
 // console.log(githubdeta);
 
 
@@ -15,7 +15,7 @@ const githubdeta = useGithubApi()
     return (
     <>
       <div className='h-9 w-9 border rounded-full overflow-hidden'>
-        <img src={githubdeta.avatar_url} alt="" className=' object-cover h-full w-full' />
+        <img src={GithubApiData?.avatar_url} alt="" className=' object-cover h-full w-full' />
       </div>
     </>
   )
