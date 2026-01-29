@@ -1,4 +1,5 @@
 import { div } from 'framer-motion/client';
+import { LetterText } from 'lucide-react';
 import React, { useState } from 'react'
 
 function Hospitl_dashcomp() {
@@ -10,8 +11,39 @@ function Hospitl_dashcomp() {
   const userUI = ()=>{switch (useItem) {
     case 0:
       return (
-        <div>
-          hello 1
+        <div className='h-full bg-gray-100 p-2 text-black '>
+          <div className='text-black not-md:text-[10px] flex justify-between p-2 font-bold bg-white  w-full text-[12px] items-center  rounded-2xl '>
+            <div className='flex justify-center items-center gap-2 '>
+              <LetterText className=' p-1 rounded-lg  bg-gray-400' /> 
+              prashantaa007@gmail.com</div>
+            <div>+91 8945512739
+            </div>
+          </div>
+
+
+          <div className='bg-white  text-[16px] flex justify-between p-2 mt-2 rounded-lg items-center'>
+            <div className='font-alluser'>EMERGENY</div>
+            <div className=' bg-gray-400/50 w-2/3 rounded-[10px] p-2' 
+            > Availabail For 24x7</div>
+          </div>
+
+          <div className='bg-white'>
+            <div className='border-b border-t m-5 border-gray-500/50'>
+<div className='flex'>
+  <div className='border'>R</div>
+  <div className='border grid-cols-2'>
+    
+  </div>
+</div>
+
+<div>
+  <button className=' border px-20 flex justify-end items-center'
+   type="button">BOOK UNIT</button>
+</div>
+<div></div>
+            </div>
+          </div>
+
         </div>
       )
       break;

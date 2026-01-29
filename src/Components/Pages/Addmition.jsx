@@ -1,5 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, UNSAFE_decodeViaTurboStream } from "react-router-dom";
+import { ArrowBigLeft, ArrowBigRight, ArrowRight, DonutIcon, EqualApproximatelyIcon, IdCard, SquareChevronDown, SquareChevronUpIcon, Verified } from "lucide-react";
+import Addmition_status from "../page_comp/addmition/Addmition_status";
 
 function Addmition() {
   setTimeout(() => {
@@ -108,11 +110,18 @@ function Addmition() {
                   </div>
                 </div>
               </div>
+
+              <div>
+              </div>
               {/* <div className="border h-full w-full"></div> */}
             </div>
           </div>
 
           
+        </div>
+
+        <div className=" z-30">
+sd
         </div>
 
 
@@ -124,9 +133,7 @@ function Addmition() {
 
 
 
-
-
-
+{/* 
         <div className="max-w-[1800px] m-auto rounded-2xl mt-10">
           <img
            className=" m-auto rounded-2xl"
@@ -146,11 +153,16 @@ function Addmition() {
               </NavLink>
              
           </div>
-        </div>
+        </div> */}
       </div>
+
+      <Addmition_status />
+
+
+
     </>
   );
 }
-import { ArrowBigLeft, ArrowBigRight, ArrowRight } from "lucide-react";
+
 
 export default Addmition;
