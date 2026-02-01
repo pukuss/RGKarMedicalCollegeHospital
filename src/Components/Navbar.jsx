@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { RG_Kar_Hospital_lgo,} from "../assets/Assets";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import { LucideMenu, User2 } from "lucide-react";
 import Account from "./page_comp/enroll/Account";
+
+
 
 
 
@@ -11,7 +13,7 @@ function Navbar() {
   const [clicked, setClicked] = useState(false);
   const RefMenuBar = useRef(null);
   // const UserTheme = <User2 />
-
+const navigate = useNavigate();
 
 
 
@@ -104,7 +106,12 @@ function Navbar() {
            {/* ------------------------------------- */}
            
             <button
-              onClick={() => setClicked((prev)=> !prev)}
+              // onClick={() => setClicked((prev)=> !prev)}
+              onClick={() =>{
+                 setClicked((prev)=> !prev);
+                 navigate("/register")
+
+              }}
 
               className={`text-sm flex justify-center items-center font-bold px-4 not-md:py-4 py-1.5 rounded-[10px] not-md:h-7 hover:px-8 transition-all duration-300 ${
                 clicked ? "border-red-600 border shadow-2xl bg-red-600/30 shadow-red-600 " : " border-green-400 border hover:bg-green-500/20 text-green-500 shadow-2xl shadow-green-600"

@@ -25,10 +25,10 @@ import {
 // =========================================================
 
 const PRASHANTA_CONFIG = {
-    PHONE: "+91 99887 76655",
+    PHONE: "+91 8945512739",
     NAME: "Prashanta",
-    TITLE: "Co-Founder", 
-    TYPO_STOCK_NAME: "PRA$HANTA-TEC",
+    TITLE: "CEO", 
+    TYPO_STOCK_NAME: "INFENCOERA",
     ANALYTICS_ENDPOINT: "/api/log",
     
     // --- FEATURE FLAG DEFINITION (ALL FLAGS FIXED / NON-TOGGLEABLE) ---
@@ -656,7 +656,7 @@ const MainApplication = () => {
         <ArchContext.Provider value={0}>
             <PaymentContext.Provider value={{ state, dispatch, bill, history, historyDispatch, logEvent, featureFlags, isAdmin }}>
                 <div className="min-h-screen bg-[#F3F4F6] flex items-center justify-center p-4 md:p-8 font-sans text-gray-800">
-                    <div className="max-w-6xl w-full bg-white rounded-[2rem] shadow-2xl overflow-hidden grid lg:grid-cols-2 min-h-[700px]">
+                    <div className="max-w-6xl w-full bg-white rounded-4xl shadow-2xl overflow-hidden grid lg:grid-cols-2 min-h-[700px]">
                         
                         {/* --- LEFT COLUMN: BRANDING & FIXED FEATURES --- */}
                         <div className="bg-slate-900 text-white p-8 md:p-12 relative overflow-hidden flex flex-col justify-between">
@@ -666,20 +666,20 @@ const MainApplication = () => {
                                         <motion.div
                                             initial={{ scale: 0 }} animate={{ scale: 1 }}
                                             transition={{ type: "spring", stiffness: 100 }}
-                                            className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white/50"
+                                            className="w-20  md:h-18 h-12 not-md:w-18 bg-blue-600/50 rounded-full flex items-center justify-center shadow-lg border-2 border-white/50"
                                         >
-                                            <Image size={32} />
+                                            <Image size={20} />
                                         </motion.div>
                                         <div>
-                                            <h1 className="text-3xl font-black tracking-tight">{PRASHANTA_CONFIG.TITLE} PRASHANTA's App</h1>
-                                            <p className="text-blue-200 text-sm font-medium">Bank Integration (V17)</p>
+                                            <h1 className="text-3xl font-black tracking-tight">{PRASHANTA_CONFIG.TITLE} CMMS HOSPITAL PAYMENT </h1>
+                                            <p className="text-blue-200 text-sm font-medium">AUTHENTICATION V 0.25</p>
                                         </div>
                                     </div>
                                     
                                     {/* --- LOGO SECTION --- */}
                                     <div className="flex justify-start gap-4 mb-8">
-                                        <LogoIcon Logo={Home} label="SBI Logo" color="text-red-500" />
-                                        <LogoIcon Logo={Pizza} label="Zomato Logo" color="text-pink-500" />
+                                        <LogoIcon Logo={Home} label="CMMS" color="text-red-500" />
+                                        <LogoIcon Logo={Pizza} label="PAYMENT.." color="text-pink-500" />
                                     </div>
                                     {/* ------------------------ */}
 
@@ -1208,8 +1208,8 @@ const ArchitectureWarningDisplay = () => {
 
     if (depth <= PRASHANTA_CONFIG.ARCHITECTURE_QUALITY_THRESHOLD) {
         return (
-            <div className="mt-6 p-4 bg-green-900 rounded-xl text-green-300 border border-green-700 text-sm flex items-center gap-2">
-                <Layers size={14}/> Arch Check: **PASS** (Current Depth: {depth})
+            <div className="mt-6 p-4 bg-green-900 rounded-xl text-green-300 border border-green-700 text-sm flex items-center gap-5">
+                <Layers size={14}/> ACTIVE   (Current Depth: {depth})
             </div>
         );
     }
@@ -1231,10 +1231,10 @@ const FixedFeatureStatus = ({ featureFlags }) => {
         <div className="mt-6 p-4 bg-blue-900 rounded-xl text-blue-300 border border-blue-700 text-sm flex items-center gap-2 justify-between">
             <span className="font-bold">System Status:</span>
             <span className="flex items-center gap-1 text-xs">
-                <TrendingUp size={12}/> STOCK Ticker: **ON**
+                <TrendingUp size={12}/> CMMH HOSPITAL
             </span>
             <span className="flex items-center gap-1 text-xs">
-                <ShieldCheck size={12}/> SECURITY Max: **ON**
+                <ShieldCheck size={12}/> SECURITY
             </span>
         </div>
     );
@@ -1251,7 +1251,7 @@ const StockTicker = ({ prashantaStock, dispatch, tick }) => {
                     <TrendingUp size={32} /> {formatStock(prashantaStock)}
                 </span>
                 <span className="text-sm font-bold text-gray-400 p-2 border border-slate-600 rounded-lg">
-                    V17 Fixed
+                    OUTLET PAY
                 </span>
             </div>
             <div className="text-xs text-slate-500 mt-2 flex items-center gap-2">

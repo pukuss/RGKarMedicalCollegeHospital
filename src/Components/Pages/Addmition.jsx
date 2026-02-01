@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, UNSAFE_decodeViaTurboStream } from "react-router-dom";
 import { ArrowBigLeft, ArrowBigRight, ArrowRight, DonutIcon, EqualApproximatelyIcon, IdCard, SquareChevronDown, SquareChevronUpIcon, Verified } from "lucide-react";
 import Addmition_status from "../page_comp/addmition/Addmition_status";
+import Register from "./LOGINCOMP/Register";
 
 function Addmition() {
   setTimeout(() => {
@@ -157,7 +158,7 @@ sd
       </div>
 
       <Addmition_status />
-
+      {/* <Register /> */}
 
 
     </>
