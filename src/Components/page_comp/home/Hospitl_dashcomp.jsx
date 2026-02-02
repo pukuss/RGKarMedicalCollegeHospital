@@ -292,6 +292,52 @@ function Hospitl_dashcomp() {
         break;
 
       default:
+        return (
+          <div className="h-full bg-purple-200 p-2 text-black">
+  {/* Contact Bar */}
+  <div className="text-black not-md:text-[10px] flex justify-between p-2 font-bold bg-white w-full text-[12px] items-center rounded-2xl">
+    <div className="flex justify-center items-center gap-2">
+      <LetterText className="p-1 rounded-lg bg-gray-400" />
+      prashantaa007@gmail.com
+    </div>
+    <div>+91 8945512739</div>
+  </div>
+
+  {/* Critical Status */}
+  <div className="bg-white text-[16px] flex justify-between p-2 mt-2  not-md:mt-0.5 rounded-lg items-center">
+    <div className="font-alluser text-purple-700">
+      CRITICAL CASES
+    </div>
+    <div className="bg-purple-300/60 w-2/3 rounded-[10px] p-2 text-center text-[12px]">
+      24×7 Intensive & Emergency Critical Care
+    </div>
+  </div>
+
+  {/* Critical Action */}
+  <div className="bg-white mt-2  not-md:mt-0.5 rounded-lg">
+    <div className="border-b border-t m-5  not-md:m-0  not-md:p-2.5 p-3 border-gray-500/50">
+      <div className="flex not-md:flex-wrap justify-between items-center not-md:justify-center gap-2">
+        <div className="text-[14px] not-md:text-[12px] font-semibold text-gray-700">
+          Immediate Support for Life-Threatening Conditions
+        </div>
+
+        <button
+          type="button"
+          className="px-20 not-md:px-12 not-md:text-[16px]
+          flex justify-center items-center bg-purple-400/70 rounded-lg p-2
+          text-purple-800 text-[20px] hover:bg-purple-500 transition-all
+          font-alluser hover:text-white">
+          REQUEST ICU
+        </button>
+      </div>
+
+      <div className="text-[9px] mt-2 text-gray-500 text-center">
+        Please contact immediately for cardiac, trauma, stroke or ICU cases.
+      </div>
+    </div>
+  </div>
+</div>
+        );
         break;
     }
   };

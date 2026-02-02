@@ -14,6 +14,7 @@ import Registration from './Components/Pages/Registration.jsx'
 import Enrolment from './Components/Pages/Sub_Page/Enrolment.jsx'
 import Register from './Components/Pages/LOGINCOMP/Register.jsx'
 import Login from './Components/Pages/LOGINCOMP/login.jsx'
+import InfeneraPlus from './Components/Pages/Sub_Page/InfeneraPlus.jsx'
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       // loader:useGithubApi,
       path: "",
       element: <Home />
+    },
+    {
+      path: "Infenera",
+      element: <InfeneraPlus />
     },
     {
       path: "register",

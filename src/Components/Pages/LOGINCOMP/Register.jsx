@@ -24,7 +24,7 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen relative top-10 md:top-16 bg-black/50 flex flex-col md:flex-row">
+    <div className="min-h-screen relative top-10 md:top-16 bg-black/50 flex flex-col md:flex-row mb-10">
       
       {/* Left Side: Graphical/Branding Section */}
       <div className="hidden md:flex md:w-1/2 bg-blue-600/50 p-12 flex-col justify-between text-white relative overflow-hidden">
@@ -40,16 +40,16 @@ const Register = () => {
           <h1 className="text-5xl font-extrabold leading-tight">
             Streamlining care <br /> for everyone.
           </h1>
-          <p className="mt-6 text-blue-100 text-lg max-w-md">
+          <h6 className="mt-6 text-blue-100 text-lg max-w-md leading-tight item text-center flex justify-center items-center ">
             Join our secure network connecting patients, doctors, and healthcare staff in real-time.
-          </p>
+          </h6>
         </div>
 
         <div className="relative z-10 p-6 bg-blue-700/30 rounded-2xl backdrop-blur-sm border border-white/10">
           <p className="italic text-blue-50">
             "This platform has completely changed how we manage patient consultations."
           </p>
-          <p className="mt-4 font-semibold">— Dr. Aris Thorne</p>
+          <p className="mt-4 font-semibold">— CSE AIR SPACE INDIA  Prashanta Mondal</p>
         </div>
       </div>
 

@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black/50 flex overflow-hidden">
+    <div className="min-h-screen bg-black/50 flex overflow-hidden relative top-10 md:top-16">
       
       {/* Left Side: Form Section */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 md:p-20">
@@ -105,7 +105,7 @@ const Login = () => {
       </div>
 
       {/* Right Side: GIF & Branding (Hidden on Mobile) */}
-      <div className="hidden lg:flex lg:w-1/2 bg-blue-600 relative flex-col items-center justify-center p-12 overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 bg-blue-600/50 relative flex-col items-center justify-center p-12 overflow-hidden">
         
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>

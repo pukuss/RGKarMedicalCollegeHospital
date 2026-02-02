@@ -9,9 +9,16 @@ import {
   GoalIcon,
   SolarPanelIcon,
 } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
+
+
+
 
 function Infenera() {
+const navigate = useNavigate()
+
+
+
   return (
     <div className=" py-5 bg-[#02020faf] rounded-lg border border-purple-800">
       <div className=" font-extrabold mt-2 mx-4 flex justify-between gap-2 items-center py-2 rounded-[5px] bg-[linear-gradient(9deg,rgba(100,0,255,0.2)_50%,rgba(255,0,225,0.1)_100%)]">
@@ -30,7 +37,10 @@ function Infenera() {
         {/* Infenera plus  */}
         <div className="flex items-center justify-between mx-2 mt-5 ">
           <span className="text-gray-100/50 text-[12px]">NEW ARRIVLE</span>
-          <span className="flex gap-2 transition-all delay-150 cursor-grab py-2 hover:bg-emerald-500 px-4 hover:px-8  bg-indigo-400 rounded-[5px]">
+          
+          <span
+          onClick={()=> navigate("Infenera")}
+          className="flex gap-2 transition-all delay-150 cursor-grab py-2 hover:bg-emerald-500 px-4 hover:px-8  bg-indigo-400 rounded-[5px]">
             INFENERA{" "}
             <span className="flex text-indigo-800 text-shadow-blue-700 text-shadow-2xs ">
               PLUS <PlusIcon />
