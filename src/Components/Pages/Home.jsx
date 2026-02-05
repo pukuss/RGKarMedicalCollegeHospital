@@ -99,21 +99,11 @@ function Home() {
               {/* bottome apply button and logo and section  */}
               <div className="flex justify-between items-center  absolute bottom-10">
                 <span>{/* <Logo /> */}</span>
-
-                {/* apply now up pg button  */}
-                {/* <Link to={"/Addmition/Enroll"}>
-                  <button className="relative inline-flex h-10 overflow-hidden rounded-full p-0.5 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                    <span className="absolute  inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                    <span className=" font-BBH inline-flex h-full w-89 cursor-pointer items-center justify-center rounded-full shadow-blue-950 shadow-lg bg-emerald-500/80 hover:bg-gray-900 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                      Apply Now UG / PG {">"}
-                    </span>
-                  </button>
-                </Link> */}
               </div>
 
-              <div className=" w-full text-gray-500 absolute bottom-0 h-5 flex  font-alluser font-extrabold text-[12px] items-center not-md:text-[9px] gap-3">
-                <span>📞 Emergency Hotline: +91 8945512739</span>
-                <span>🕒 Available 24×7 </span>
+              <div className=" w-full text-gray-500 absolute bottom-0 h-5 flex  font-black italic text-[12px] items-center not-md:text-[9px] gap-3">
+                <span> Emergency Hotline: +91 8945512739</span>
+                <span> Available 24×7 </span>
               </div>
             </div>
           </div>
@@ -161,6 +151,8 @@ function Home() {
               </div>
             </div>
 
+
+
             {/* github dropdown arrow =============================================== */}
             <div className=" p-10 flex m-5 gap-1 absolute bottom-0 not-md:-bottom-10 ">
               <button
@@ -173,8 +165,7 @@ function Home() {
                   githubOpen
                     ? "bg-emerald-400/40 shadow-2xl backdrop-blur-3xl shadow-emerald-400"
                     : "hover:bg-gray-600"
-                }
-                `}>
+                }`}>
                 <img
                   width="20"
                   height="20"
@@ -301,12 +292,12 @@ function Home() {
 
             <div className=" max-w-[1600px] m-auto flex flex-col justify-end mt-20 gap-10">
               {/* ad area  */}
-              <div className=" w-[80%] m-auto ">
+              {/* <div className=" w-[80%] m-auto ">
                 <img
                   className=" object-cover flex border w-full rounded-2xl overflow-hidden border-blue-700 shadow-fuchsia-600 shadow-[0px_0px_30px_2px] hover:shadow-emerald-500 hover:drop-shadow-2xl"
                   src="/Promotion/EnfenEra.png"
                 />
-              </div>
+              </div> */}
 
               {/* ----------------------------------- */}
               {/* the INFENERA next wave box */}

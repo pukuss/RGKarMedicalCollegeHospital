@@ -38,10 +38,10 @@ const navigate = useNavigate();
 
 
   const menuclass =
-    "font-alluser text-[12px] hover:border hover:text-emerald-500 flex bg-green-500/10 border border-green-500 p-2 cursor-pointer rounded-[8px]";
+    "font-black text-[12px] hover:border hover:text-emerald-500 flex bg-green-500/10 border border-green-500 p-2 cursor-pointer rounded-[8px]";
 
   const Dex_menu =
-    "flex md:text-[14px]  cursor-pointer whitespace-nowrap hover:text-amber-500 font-alluser p-2 rounded-[10px] ";
+    "flex md:text-[12px]  cursor-pointer whitespace-nowrap hover:text-amber-500 font-black p-2 rounded-[10px] ";
 
   return (
     <>
@@ -65,7 +65,7 @@ const navigate = useNavigate();
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `${isActive ? "text-amber-600 font-bold" : "font-bold"}`
+                  `${isActive ? "text-blue-500 border-b-blue-400 border-b-2 font-black " : "font-black"}`
                 }>
                 HOME
               </NavLink>
@@ -75,7 +75,7 @@ const navigate = useNavigate();
               <NavLink
                 to="addmition"
                 className={({ isActive }) =>
-                  `${isActive ? "text-amber-600 font-bold" : "font-bold"}`
+                  `${isActive ? "text-blue-500 font-black" : "font-black"}`
                 }>
                 ADDMITION
               </NavLink>
@@ -85,7 +85,7 @@ const navigate = useNavigate();
               <NavLink
               to={"Academic"}
               className={({isActive})=>
-                `${isActive ? "text-amber-600": "font-bold"}`
+                `${isActive ? "text-blue-500": "font-black"}`
               } 
               >
                 ACADEMICS
