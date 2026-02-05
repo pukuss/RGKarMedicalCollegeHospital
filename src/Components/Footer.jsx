@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
 
           {/* High-detail Contact Block */}
-          <div className="lg:col-span-4 p-8 rounded-[2rem] bg-gradient-to-b from-blue-600/10 to-transparent border border-blue-500/10">
+          <div className="lg:col-span-4 p-8 rounded-4xl bg-linear-to-b from-blue-600/10 to-transparent border border-blue-500/10">
             <div className="flex items-center gap-2 text-blue-500 font-black text-xs uppercase tracking-widest mb-6">
               <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-ping" /> Global HQ
             </div>
@@ -138,11 +138,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 border border-blue-500/20"><Phone size={18} /></div>
-                <p className="text-white font-bold">+91 (33) 2400-5000</p>
+                <p className="text-white font-bold">+91 8945512739</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 border border-blue-500/20"><Mail size={18} /></div>
-                <p className="text-white font-bold">concierge@medicare.global</p>
+                <p className="text-white font-bold">prashantaa007@gmail.com</p>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ const Footer = () => {
                   <a key={i} href="#" className="text-slate-600 hover:text-white transition-colors"><Icon size={20} /></a>
                 ))}
              </div>
-             <div className="h-6 w-[1px] bg-white/10 hidden md:block" />
+             <div className="h-6 w-px bg-white/10 hidden md:block" />
              <p className="text-[10px] font-bold text-slate-600 uppercase tracking-widest">© {currentYear} MEDICARE+ GROUP</p>
           </div>
         </div>

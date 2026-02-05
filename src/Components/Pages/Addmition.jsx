@@ -1,15 +1,26 @@
-import React from "react";
-import { NavLink, UNSAFE_decodeViaTurboStream } from "react-router-dom";
-import { ArrowBigLeft, ArrowBigRight, ArrowRight, DonutIcon, EqualApproximatelyIcon, IdCard, SquareChevronDown, SquareChevronUpIcon, Verified } from "lucide-react";
+import { AmpersandsIcon, ArrowBigLeft, ArrowBigRight, ArrowRight, Book, DonutIcon, EqualApproximatelyIcon, FilterX, Goal, IdCard, Rocket, SquareChevronDown, SquareChevronUpIcon, Verified } from "lucide-react";
 import Addmition_status from "../page_comp/addmition/Addmition_status";
-import Register from "./LOGINCOMP/Register";
+import instaFeed from "../Api/InstaFeed";
 
 function Addmition() {
   setTimeout(() => {
     
   }, 5000);
+  const {Postdata} = instaFeed()
+
+  
+  console.log(Postdata);
+  
 
   const USERITEM = ["NURSING" , "DOCTOR" , "D-FHARMA" , "SURGENT"]
+  const COURSE = [
+    {name: "NURSING", course:"ANM GNM B.sc", year: "2 Years , 3.5 Years , 4 ", elegiblity: " 10+2 BIO-SCIENCE (PCB)"  },
+    {name: "DOCTOR -MBBS", course:"MBBS", year: "5.5 Years 4.5 + 1 Year Internship", elegiblity: "10+2 NEET UG&PG (PCB)"},
+    {name: "DIPLOMA IN PHARMA", course: "D-PHARMA,B-PHARMA" , year: "2 Years , 3 Years" , elegiblity: "10+2 (PCB)"},
+    {name: "SURGEON", course: "MBBS , MS/Mch " ,year: "5.5 Years , 3.5 Years", elegiblity: "NEET UG&PG" },
+  ]
+console.log(COURSE);
+
 
   return (
     <>
@@ -25,10 +36,10 @@ function Addmition() {
           className=" h-10 w-full flex justify-between px-3 items-center">
             {/* Top nav bar explore and logo ------------------------------>>>>>>>>>> */}
             <div className="not-md:text-[12px]">
-              <span className="font-BBH ">
+              <span className="font-black ">
                 INFEN
               </span>
-              <span className="font-BBH text-purple-800">
+              <span className="font-black text-purple-800">
                 ERA
               </span>
             </div>
@@ -53,10 +64,10 @@ function Addmition() {
               <div className=" flex items-center h-full w-full not-md:justify-center">
                 <div className="flex flex-col md:items-start items-center not-md:justify-start md:gap-20 m-4 md:m-10">
                   <div className=" flex flex-col">
-                    <span className="font-alluser animate-slideDown font-extrabold text-4xl text-white md:text-7xl">ADDMITION OPEN</span>
+                    <span className="animate-slideDown flex gap-2 font-extrabold text-4xl text-white md:text-7xl">ADDMITION <p className="text-amber-400">OPEN</p></span>
                     <span className="font-extrabold not-md:text-[10px] animate-slideDown text-purple-500">  CarePlus Multispeciality Medicale College & Hospital </span>
                   </div>
-                  <div className=" text-2xl not-md:text-[16px] font-alluser md:items-start flex flex-col">
+                  <div className=" text-2xl not-md:text-[16px] font-black md:items-start flex flex-col">
                     <span className="text-7xl not-md:text-3xl text-purple-600 text-shadow-2xs shadow-purple-300"> India's Top 10</span>
                     <span>MULTISPECIALITY HOSPITAL</span>
                     <span className="text-[26px] not-md:text-[10px] font-bebas">When you Want to be A doctor</span>
@@ -74,43 +85,47 @@ function Addmition() {
                 </div>
               </div>
 
-              <div className=" animate-slideDown w-full h-full grid grid-rows-2 gap-1">
-                <div className="flex  justify-center items-center max-h-full gap-3 bg-purple-200/10 backdrop-blur-lg md:m-10 p-5 md:p-10 rounded-[10px]">
-                  {
+
+
+              <div className=" animate-slideDown w-full h-full  grid  gap-1 rounded-2xl">
+                <div className="grid  h-full gap-3 bg-blac backdrop-blur-lg rounded-xl p-5 ">
+                  {/* {
                     USERITEM.map((element)=> {
                       return <div 
-                      className="border cursor-pointer font-alluser not-md:h-18 not-md:w-18 not-md:text-[12px]  h-1/2 w-1/4 flex justify-center items-center bg-purple-500/10 backdrop-blur-lg hover:bg-green-400/30 transition-all delay-150 ">
+                      className="border rounded-xl cursor-pointer font-alluser   not-md:text-[12px]   flex justify-center items-center bg-purple-500/10 backdrop-blur-lg hover:bg-green-400/30 transition-all delay-150 ">
                         {element}</div>
                     })
+                  } */}
+
+                  {
+                    COURSE.map((element,index)=>{
+                      return(
+                        <div key={index} className=" hover:border-amber-500  grid auto-rows-[minmax(40px,auto)]  group rounded-2xl bg-linear-to-br from-zinc-900 to-black border border-white/10 italic p-2">
+                          <div className=" flex justify-between px-2 font-black items-center">
+                            <h1 className="flex items-center gap-2"><Rocket size={15} /> {element.name}</h1>
+                            <h6>bill</h6>
+                          </div>
+                          <h6 className="border gap-2 border-amber-300 max-w-max px-5 h-7 rounded-4xl group-hover:bg-amber-400/50 font-black bg-black/50 ml-2 items-center flex text-[12px]">
+                          <Book size={15} color="gold"/> 
+                          {element.course}</h6>
+
+                          <div className="font-alluser text-amber-400 text-[12px] grid justify-items-end px-5 p2 ">
+                            <h3><label className="text-amber-50 " htmlFor="">DURATION : </label>  {element.year}</h3>
+                             <h3><label className="text-amber-50" htmlFor="">DURATION : </label>  {element.year}</h3>
+                          </div>
+
+                        </div>
+                      );
+                    })
                   }
-                  {/* <div className="border h-1/2 w-1/4 flex justify-center items-center hover:bg-fuchsia-600/50">NURSING</div>
-                  <div className="border h-1/2 w-1/4 flex justify-center items-center">DOCTOR</div>
-                  <div className="border h-1/2 w-1/4 flex justify-center items-center">D-FARMA</div>
-                  <div className="border h-1/2 w-1/4 flex justify-center items-center">SURGENT</div> */}
                 </div>
-                <div className=" flex justify-end items-end">
-                  <div className="m-2 font-BBH text-[8px] ">
-                    
-                    <div className="flex justify-center items-center text-cyan-500 gap-2">
-                      <label className="text-[12px]" htmlFor="">
-                        Email
-                      </label>
-                      <input
-                        className="pl-2 font-alluser text-[12px] px-25 bg-pink-500/20 rounded-2xl h-6 border border-purple-700"
-                        type="email"
-                        placeholder="Drop You Email"
-                        name=""
-                        id="" />
-                      <button
-                        className="border rounded-full p-2 px-2.5"
-                        type="submit">
-                        ={">"}
-                      </button>
-                    </div>
-                    <span>INFENERA HOSPITAL&CO PVT LTD</span>
-                  </div>
-                </div>
+
+
+
               </div>
+
+
+
 
               <div>
               </div>
@@ -157,7 +172,7 @@ sd
         </div> */}
       </div>
 
-      <Addmition_status />
+      {/* <Addmition_status /> */}
       {/* <Register /> */}
 
 

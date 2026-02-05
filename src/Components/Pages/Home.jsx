@@ -13,31 +13,41 @@ import {
   SolarPanelIcon,
   LocateFixedIcon,
   ListTree,
+  Copy,
 } from "lucide-react";
 
 import githubApi from "../Api/Github";
-
 import Infenera from "../page_comp/home/Infenera";
 import GemeniBar from "../page_comp/Effects/GemeniBar";
 import GithubBox from "../page_comp/home/GithubBox";
 import Hospitl_dashcomp from "../page_comp/home/Hospitl_dashcomp";
 
+
+
 function Home() {
   // Github Dropdown
   const [githubOpen, setgithubOpen] = useState(false);
   const [GoogleOpen, setGoogleOpen] = useState(false);
-  
-  
+
+
+  // COPY TEXT ITEM =================
+  const copytext = (text)=> {
+    navigator.clipboard.writeText(text)
+  };
+
+  // user after click copy button============ 
+  const [copy, setCopy] = useState(false)
+
+
+
   // const GithubApiDeta = useLoaderData(); looder..............>>>
   // const GithubApiDeta = githubApi();
-    
+
   const dropdownRef = useRef(null);
 
-  const {GithubApiData , error} = githubApi()
+  const { GithubApiData, error } = githubApi();
   console.log(GithubApiData);
   console.log(error);
-  
-  
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -55,15 +65,11 @@ function Home() {
     };
   }, [githubOpen]);
 
-
-
-
-
   return (
     <>
       <div className="">
         {/* Background video===============================================>>>  */}
-        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_50px] shadow-pink-200">
+        <div className=" w-full relative m-auto  shadow-[0px_10px_80px_50px] shadow-black">
           <video
             autoPlay
             muted
@@ -88,8 +94,6 @@ function Home() {
                   className=" not-md:text-[4vw] text-6xl font-bold font-BBH">
                   CarePlus Multispeciality Medicale College & Hospital
                 </span>
-
-             
               </div>
 
               {/* bottome apply button and logo and section  */}
@@ -107,10 +111,7 @@ function Home() {
                 </Link> */}
               </div>
 
-
-
               <div className=" w-full text-gray-500 absolute bottom-0 h-5 flex  font-alluser font-extrabold text-[12px] items-center not-md:text-[9px] gap-3">
-                
                 <span>📞 Emergency Hotline: +91 8945512739</span>
                 <span>🕒 Available 24×7 </span>
               </div>
@@ -121,91 +122,47 @@ function Home() {
         {/* Main containar Of Home Page   */}
         <div className=" w-full m-auto mt-20 not-md:p-2  overflow-hidden">
           <div
-            className=" z-10 not-md:h-[90vh] 
+            className=" z-10  
           bg-[url('https://images.pexels.com/photos/1824273/pexels-photo-1824273.jpeg')] 
-          bg-cover bg-right  max-w-[1600px] m-auto rounded-2xl relative">
-            <div className="  flex flex-col items-start w-full relative">
-              <span className="p-2  md:text-2xl text-[2.2vw] font-alluser capitalize text  text-gray-400">
-                Information of NEET PG Admission-2025 of R. CarePlus
-                Multispeciality Hospital
-              </span>
-
-              <div className="flex   gap-10 p-3  min-w-full rounded-[0px_15px_0px_0px]">
-                {/* activitis button   */}
-                <button className=" font-alluser not-md:px-1 not-md:py-0 bg-black/50 group flex items-center justify-center not-md:text-[10px] text-purple-500  px-0 py-1 rounded-[5px] border font-bold gap-2">
-                  <img
-                    src="/src/assets/icon/Student_icon.png"
-                    className="h-5 not-md:h-3 "
-                    alt=""
-                  />
-                  <span>ACTIVITS</span>
-                  <span className="opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-[18px]">
-                    ›
-                  </span>
-                </button>
-
-                {/* union button  */}
-              <button className=" font-alluser bg-black/50 group flex items-center justify-center not-md:text-[10px] text-purple-500  px-5 py-1 rounded-[5px] border font-bold gap-2">
-                  <img
-                    src="/src/assets/icon/Student_icon.png"
-                    className="h-5 "
-                    alt=""
-                  />
-                  <span>STUDENT UNION </span>
-                  <span className="opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-[18px]">
-                    ›
-                  </span>
-                </button>
+          bg-cover bg-right  max-w-[1600px] m-auto rounded-2xl relative border border-purple-700">
+            
+            
+            <div className=" flex m-10 justify-center gap-5 items-center p-5">
+              <div className="border h-40 w-40 rounded-full bg-linear-to-r from-purple-800 to-teal-400 flex items-center cursor-pointer">
+                <div className="m-5 font-black flex  flex-wrap justify-center items-center  ">
+                  <p>HOSPITAL</p>
+                  <h1 className=" text-4xl">27/7</h1>
+                  <p>{Date.now()}</p>
+                </div>
               </div>
-            </div>
 
-            <div className="h-[600px] w-full items-center gap-10 md:justify-between flex md:px-10 not-md:flex-col ">
-              <div className=" md:w-[60%] font-bold gap-5 flex flex-col ">
-                <span
-                  style={{
-                    backgroundImage:
-                      "url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                  }}
-                  className="text-[clamp(25px,3vw,32px)] font-bebas ">
-                  CarePlus Multispeciality Medicale College & Hospital
-                  established in 1986
-                </span>
-
-                {/* information box and detalis of rgkar and text button activits and union  */}
-                <span className="not-md:text-[10px] text-gray-400">
-                  making it one of the oldest medical colleges in India. It was
-                  named after the renowned Indian philanthropist Dr. Radha
-                  Gobinda Kar. This college is affiliated with the West Bengal
-                  University of Health Sciences (WBUHS) and is recognized by the
-                  Medical Council of India (MCI) for undergraduate and
-                  postgraduate medical education. The college offers
-                  undergraduate (MBBS), postgraduate (MD/MS), post doctorate
-                  (DM/MCh), PG Diploma, Fellowship programs in various medical
-                  disciplines. It also provides opportunities for research and
-                  specialization in different fields of medicine. R. G. Kar
-                  Medical College is associated with R. G. Kar Medical College
-                  and Hospital, which is a major government teaching hospital in
-                  Kolkata. The hospital provides healthcare services to the
-                  community and serves as a training ground for medical
-                  students. This college campus is equipped with modern
-                  facilities, including classrooms, laboratories, a library, and
-                  accommodation for students and faculty. The institution
-                  emphasizes research and academic excellence. It has several
-                  departments and research centers dedicated to advancing
-                  medical knowledge and patient care. R. G. Kar Medical College
-                  has a rich history and has produced many accomplished medical
-                  professionals who have made significant contributions to the
-                  field of medicine.
-                </span>
+              <div
+                className="border cursor-pointer p-5 h-40 w-40 rounded-full bg-linear-to-r from-purple-600 via-purple-500 to-pink-500 flex items-center justify-center">
+                <div className="m-5 font-black flex  flex-wrap justify-center items-center relative  ">
+                  <p>EMERGENCY</p>
+                  <h1 className=" text-3xl flex justify-center items-center gap-2">COPY  <Copy size={25} color="white"/></h1>
+                  <p className=" text-nowrap">Contact No...</p>
+                  
+                  <div
+                    onClick={()=> {
+                      setCopy(true)
+                      copytext("+91 8945512739")
+                      
+                      setTimeout(() => {
+                        setCopy(false)
+                      }, 3000);
+                    }}
+                    
+                    className="bg-black flex justify-center gap-2 items-center flex-wrap absolute h-40 w-40 opacity-0 hover:opacity-70  rounded-full border-2 border-purple-500 hover:scale-110 transition-transform duration-300">
+                    <h4> {copy? "COPYED":"COPY HEAR"}</h4>
+                    <Copy size={20} color="white"/>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* github dropdown arrow =============================================== */}
-            <div className=" p-10 flex gap-1 absolute bottom-0 not-md:-bottom-10 ">
+            <div className=" p-10 flex m-5 gap-1 absolute bottom-0 not-md:-bottom-10 ">
               <button
                 onClick={() => {
                   setgithubOpen(!githubOpen);
@@ -320,21 +277,24 @@ function Home() {
           <div className=" ">
             <div className=" max-w-[1600px] m-auto  mt-1.5  relative">
               <div className=" h-full w-full  rounded-[7px] overflow-hidden">
-                
                 <div className="p-5 w-full h-full bg-[linear-gradient(9deg,rgba(100,0,255,0.5)_50%,rgba(255,0,225,0.1)_100%)] ">
+                  <div className="p-2 flex items-center gap-3 rounded-lg not-md:text-[14px] w-full font-BBH text-purple-500 mb-2 bg-purple-500/20">
+                    <span>
+                      <LocateFixedIcon />
+                    </span>
+                    <span>Hospital Faculty</span>
+                  </div>
 
-                    <div className="p-2 flex items-center gap-3 rounded-lg not-md:text-[14px] w-full font-BBH text-purple-500 mb-2 bg-purple-500/20">
-                      <span><LocateFixedIcon /></span>
-                      <span>Hospital Faculty</span>
-                    </div>
-
-                    <div className=" font-bold  not-md:text-[14px]">
-                      At <span className="font-extrabold text-purple-500">CarePlus Multispeciality Medicale College & Hospital</span> , healthcare is not just treatment — it is
-                      responsibility. We combine medical expertise, modern
-                      infrastructure, and compassionate care to ensure every
-                      patient receives the attention they deserve.
-                    </div>
-
+                  <div className=" font-bold  not-md:text-[14px]">
+                    At{" "}
+                    <span className="font-extrabold text-purple-500">
+                      CarePlus Multispeciality Medicale College & Hospital
+                    </span>{" "}
+                    , healthcare is not just treatment — it is responsibility.
+                    We combine medical expertise, modern infrastructure, and
+                    compassionate care to ensure every patient receives the
+                    attention they deserve.
+                  </div>
                 </div>
               </div>
             </div>
@@ -356,12 +316,10 @@ function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className=" max-w-[1600px] m-auto mt-10 rounded-2xl overflow-hidden p-2 ">
             <Hospitl_dashcomp />
           </div>
-
-
         </div>
       </div>{" "}
       {/*main dev*/}

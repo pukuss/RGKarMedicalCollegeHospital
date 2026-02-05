@@ -20,7 +20,7 @@ const navigate = useNavigate()
 
 
   return (
-    <div className=" py-5 bg-[#02020faf] rounded-lg border border-purple-800">
+    <div className=" py-5 bg-purple-600/10 rounded-lg border border-purple-800">
       <div className=" font-extrabold mt-2 mx-4 flex justify-between gap-2 items-center py-2 rounded-[5px] bg-[linear-gradient(9deg,rgba(100,0,255,0.2)_50%,rgba(255,0,225,0.1)_100%)]">
         <div className=" text-[18px] flex mx-2 justify-start gap-2 items-center">
           <span className="text-red-700">THE</span> <span>INFENERA</span>{" "}
