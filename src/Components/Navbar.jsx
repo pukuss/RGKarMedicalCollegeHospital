@@ -157,7 +157,14 @@ function Navbar() {
         <div ref={RefMenuBar} className="w-50 flex fixed right-2 top-10 mt-2 z-40 transition-all duration-1000 " 
           // onClick={(e) => e.stopPropagation()}
         >
-          <ul className="gap-1 md:hidden w-full rounded-lg transition-all duration-1000 p-5 flex flex-col bg-linear-to-r from-black/70 to-green-600/50">
+          <ul style={
+            {backgroundImage:`url('https://i.pinimg.com/736x/67/2d/7e/672d7e04694b4d2fa200cad07c533153.jpg')`,
+              backgroundPosition:"center",
+              backgroundSize: "cover",
+                   backgroundRepeat: "no-repeat",
+
+            }}
+           className="gap-1 md:hidden w-full rounded-lg transition-all duration-1000 p-5 flex flex-col shadow-[inset_0_0_70px_rgba(0,0,0,0.9)] shadow-black bg-blacks ">
             <li>
               {" "}
               {/*Home*/}
@@ -166,8 +173,8 @@ function Navbar() {
                 className={({ isActive }) =>
                   `${menuclass}  ${
                     isActive
-                      ? "text-emerald-500 border border-emerald-700 italic"
-                      : "text-amber-50"
+                      ? "text-zinc-100 border border-zinc-400/40 backdrop-blur-md italic rounded-xl px-4 py-2 bg-zinc-900/40 transition-all duration-500 shadow-lg shadow-zinc-950/20 hover:border-zinc-300 hover:bg-zinc-900/60"
+                      : "text-zinc-500/80 border border-zinc-500/10 backdrop-blur-sm italic rounded-xl px-4 py-2 bg-white/5 transition-all duration-500 hover:text-zinc-400 hover:border-zinc-500/30 hover:bg-white/10"
                   }`
                 }>
                 Home
@@ -182,8 +189,8 @@ function Navbar() {
                 className={({ isActive }) =>
                   `${menuclass}  ${
                     isActive
-                      ? "text-emerald-500 border border-emerald-700 italic"
-                      : "text-amber-50"
+                      ? "text-zinc-100 border border-zinc-400/40 backdrop-blur-md italic rounded-xl px-4 py-2 bg-zinc-900/40 transition-all duration-500 shadow-lg shadow-zinc-950/20 hover:border-zinc-300 hover:bg-zinc-900/60"
+                      : "text-zinc-500/80 border border-zinc-500/10 backdrop-blur-sm italic rounded-xl px-4 py-2 bg-white/5 transition-all duration-500 hover:text-zinc-400 hover:border-zinc-500/30 hover:bg-white/10"
                   }`
                 }>
                 ADDMITION

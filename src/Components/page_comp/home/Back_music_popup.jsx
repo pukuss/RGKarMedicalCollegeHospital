@@ -54,7 +54,7 @@ function Back_music_popup() {
             preload="auto"
           />
 
-          <h1 className="text-sm mb-2">
+          <h1 className="text-sm mb-2 font-alluser">
             🎧 Get a better experience with music
           </h1>
 
@@ -62,10 +62,7 @@ function Back_music_popup() {
             <button onClick={playMusic}>
               <PlayIcon />
             </button>
-
-            <button onClick={pauseMusic}>
-              <Pause />
-            </button>
+             <h5 className="text-white font-black">I Will Allaws Find You</h5>
           </div>
         </div>
       )}
