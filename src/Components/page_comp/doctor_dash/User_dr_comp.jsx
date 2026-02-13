@@ -65,7 +65,7 @@ function User_dr_comp({
                 </span>
             </div>
 
-            <div className="bg-black grid md:grid-cols-2 sm:grid-cols-1">
+            <div className="bg-black grid md:grid-cols-2 sm:grid-cols-1 font-alluser">
                 <div className="bg-gray-500 flex gap-5  p-2">
                     <div className="bg-white text-gray-500 shadow-[0_0_70px_rgba(0,0,0,0.9)] shadow-blac flex flex-col flex-1 rounded-xl p-4 gap-3">
                         <div className="flex gap-5">
@@ -105,7 +105,7 @@ function User_dr_comp({
                     </div>
 
                     {/* section two ============================================== */}
-                    <div className=" grid p-2 flex-1 rounded-xl">
+                    <div className=" grid p-2 flex-1 rounded-xl font-alluser">
                         {
                             advancBox.map((element, index)=>{
                                 return (
