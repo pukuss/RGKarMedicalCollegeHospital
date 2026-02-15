@@ -47,7 +47,7 @@ function Back_music_popup() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         }}
-         className={`backdrop-blur-md transition-all duration-500 ease-out bg-black italic rounded-2xl p-3 fixed bottom-10 left-5 text-[#fefaae] z-50 ${hide} shadow-inner shadow-black`}>
+         className={` backdrop-blur-md transition-all duration-500 ease-out bg-black italic rounded-2xl p-3 fixed bottom-10 left-5 text-[#fefaae] z-50 ${hide} shadow-inner shadow-black`}>
           <audio
             ref={audioRef}
             src="/bg_video/i_will_allaws _find_you.mp3"

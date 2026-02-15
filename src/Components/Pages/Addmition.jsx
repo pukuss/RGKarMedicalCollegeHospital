@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import Addmition_status from "../page_comp/addmition/Addmition_status";
 import instaFeed from "../Api/InstaFeed";
+import { Link } from "react-router-dom";
 
 function Addmition() {
   setTimeout(() => {}, 5000);
@@ -127,6 +128,7 @@ console.log(DOC_NEED);
                     </span>
                   </div>
 
+                  <Link to={"/addmition/enroll"}>
                   <div>
                     <button
                       className="border font-black border-pink-600 m-1 flex gap-5 justify-center items-center px-10 not-md:px-5 rounded-xl bg-purple-600/50"
@@ -138,6 +140,7 @@ console.log(DOC_NEED);
                       </span>
                     </button>
                   </div>
+                  </Link>
                 </div>
               </div>
 

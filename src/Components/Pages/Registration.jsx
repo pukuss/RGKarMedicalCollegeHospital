@@ -19,7 +19,7 @@ const EnterpriseHospitalPay = () => {
   };
 
   return (
-    <div className="min-h-screen relative top-14 md:20 bg-black text-[#0F172A] font-sans antialiased pb-20">
+    <div className=" relative top-14 md:20 bg-black text-[#0F172A] font-sans antialiased pb-20">
       
       {/* 1. ENTERPRISE HEADER (Global Nav) */}
       <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 px-6 py-3 shadow-sm">

@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       element: <Addmition />
     },
       {
-      path: "addmition/Enroll",
+      path: "addmition/enroll",
       element: <Enrolment />
       },
     {
